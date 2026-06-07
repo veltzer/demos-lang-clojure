@@ -1,0 +1,17 @@
+{:paths ["src"]
+ :deps {}
+ :aliases
+ {;; Run each closure example via:  clojure -M:<alias>
+  ;; e.g.  clojure -M:counter
+  :basic          {:main-opts ["-m" "closures.basic"]}
+  :counter        {:main-opts ["-m" "closures.counter"]}
+  :adder          {:main-opts ["-m" "closures.adder"]}
+  :memoize        {:main-opts ["-m" "closures.memoize"]}
+  :once           {:main-opts ["-m" "closures.once"]}
+  :accumulator    {:main-opts ["-m" "closures.accumulator"]}
+  :private-state  {:main-opts ["-m" "closures.private-state"]}
+  :compose        {:main-opts ["-m" "closures.compose"]}
+  :loop-capture   {:main-opts ["-m" "closures.loop-capture"]}
+  :memo-fib       {:main-opts ["-m" "closures.memo-fib"]}
+  ;; Run every example in sequence:  clojure -M:all
+  :all            {:main-opts ["-m" "closures.all"]}}}
