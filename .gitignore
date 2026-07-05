@@ -1,0 +1,6 @@
+# Clojure CLI classpath cache (regenerated from deps.edn; `make clean` removes it)
+.cpcache/
+
+# Common Clojure/JVM build artifacts
+target/
+*.class
