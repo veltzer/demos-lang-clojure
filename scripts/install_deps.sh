@@ -1,7 +1,7 @@
 #!/bin/bash -eu
-# Install the Clojure CLI (`clojure`/`clj`) so that `make` works.
+# Install the Clojure CLI (`clojure`/`clj`) so that the run scripts work.
 #
-# The Makefile in this repo runs each example via `clojure -M:<alias>`,
+# The scripts in this repo run each example via `clojure -M:<alias>`,
 # which requires the official Clojure command-line tools (not the older
 # Debian/Ubuntu `clojure` apt package). This script installs those tools
 # using the official linux-install script from clojure.org.

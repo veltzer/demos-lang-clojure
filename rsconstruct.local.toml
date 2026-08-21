@@ -1,0 +1,10 @@
+# Repo-specific overlay. Deep-merged over the canonical rsconstruct.toml.
+
+# The Clojure CLI is not an apt package; scripts/install_deps.sh installs it
+# from clojure.org. These are what that installer itself needs: a JDK to run
+# Clojure and curl to download the installer.
+[dependencies]
+system = [
+	"curl",
+	"default-jdk",
+]

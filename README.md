@@ -27,14 +27,17 @@ Run all ten in sequence with a single alias:
 clojure -M:all
 ```
 
-### Makefile
+### Scripts
 
-A `Makefile` wraps the same commands:
+Bash wrappers in `scripts/` cover the same commands:
 
 ```sh
-make help        # list targets
-make all         # run every example (one make target each)
-make run-all     # run every example via the :all alias
-make counter     # run a single example
-make clean       # remove the .cpcache directory
+scripts/run.sh counter    # run a single example
+scripts/run_each.sh       # run every example, one clojure invocation each
+scripts/run_all.sh        # run every example via the :all alias
+scripts/clean.sh          # remove the .cpcache directory
+scripts/install_deps.sh   # install the Clojure CLI (JDK, curl, clojure)
 ```
+
+Checks (shellcheck on the scripts, taplo on the TOML) run via
+`rsconstruct build`.
