@@ -59,11 +59,11 @@ else
 	trap 'rm -f "$INSTALLER"' EXIT
 
 	echo "[clojure] not found; downloading the official Clojure CLI installer..."
-	curl -fsSL -o "$INSTALLER" https://download.clojure.org/install/linux-install.sh
-	chmod +x "$INSTALLER"
+	curl -fsSL -o "${INSTALLER}" https://download.clojure.org/install/linux-install.sh
+	chmod +x "${INSTALLER}"
 
 	echo "[clojure] running the installer (installs to /usr/local, may prompt for sudo)..."
-	sudo bash "$INSTALLER"
+	sudo bash "${INSTALLER}"
 	hash -r 2>/dev/null || true
 	echo "[clojure] installed ($(command -v clojure))"
 fi
